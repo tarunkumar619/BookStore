@@ -1,4 +1,4 @@
-﻿    using System;
+﻿        using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Linq.Expressions;
@@ -27,10 +27,26 @@
               DbSet.Add(entity);
             }
 
-            public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
+            public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
+            {
+            if (tracked)
             {
                 IQueryable<T> query = DbSet;
-                query=query.Where(filter);
+                query = query.Where(filter);
+                if (!string.IsNullOrEmpty(includeProperties))
+                {
+                    foreach (var includeProp in includeProperties
+                        .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        query = query.Include(includeProp);
+                    }
+                }
+                return query.FirstOrDefault();
+            }
+            else
+            {
+                IQueryable<T> query = DbSet.AsNoTracking();
+                query = query.Where(filter);
                 if (!string.IsNullOrEmpty(includeProperties))
                 {
                     foreach (var includeProp in includeProperties
@@ -42,12 +58,21 @@
                 return query.FirstOrDefault();
 
 
+
+
             }
 
-            public IEnumerable<T> GetAll(string? includeProperties = null)
+            }
+
+            public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter,string? includeProperties = null)
             {
                 IQueryable<T> query = DbSet;
-                if (!string.IsNullOrEmpty(includeProperties))
+            if(filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            if (!string.IsNullOrEmpty(includeProperties))
                 {
             foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                     {

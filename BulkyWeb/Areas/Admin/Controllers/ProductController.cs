@@ -4,6 +4,8 @@ using Bulky.DataAccess.Repository;
 using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Bulky.Models.ViewModels;
+using Bulky.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
@@ -14,6 +16,7 @@ using System.Collections.Generic;
 namespace BulkyWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
 
@@ -65,10 +68,8 @@ namespace BulkyWeb.Areas.Admin.Controllers
                     string wwwRootPath=_webHostEnvironment.WebRootPath;
                     if (file != null)
                     {
-                        string filename=Guid.NewGuid().ToString()+Path.GetExtension(file.FileName);  // name
-                        string productpath = Path.Combine(wwwRootPath, "Images\\Product");  // location to save
-                                                                                            // 
-
+                        string filename=Guid.NewGuid().ToString()+Path.GetExtension(file.FileName); 
+                        string productpath = Path.Combine(wwwRootPath, "Images\\Product"); 
                     if(!string.IsNullOrEmpty(productVM.Product.ImageUrl)) 
                     {
                       // delete old image
@@ -154,7 +155,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
 
         [HttpDelete]
-        [Route("Admin/Product/Delete/{id}")]
+        [Route("admin/product/delete/{id}")]
         public IActionResult Delete(int? id)
         {
             var productToBeDeleted = unitOfWork.Product.Get(u => u.Id == id);
