@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-namespace Bulky.Models.ViewModels
-{
-    public class ShoppingCartVM
+    namespace Bulky.Models.ViewModels
     {
-        public IEnumerable<ShoppingCart> ShopingCartList { get; set; }
-        
-        public OrderHeader OrderHeader { get; set; }    
+        public class ShoppingCartVM
+        {
+            public IEnumerable<ShoppingCart> ShopingCartList { get; set; }
+            public OrderHeader OrderHeader { get; set; }    
 
-
-
-
-
+        }
     }
-}

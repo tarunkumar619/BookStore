@@ -21,7 +21,9 @@ namespace Bulky.Models
 
         public DateTime OrderData {  get; set; }       
 
-        public DateTime ShippingDate { get; set; }  
+        public DateTime ShippingDate { get; set; }
+
+        public DateTime PaymentDate { get; set; }
 
         public double OrderTotal { get; set; } 
 
@@ -34,6 +36,8 @@ namespace Bulky.Models
         public string ? Carrier {  get; set; }  
 
         public DateOnly PaymentdueDate { get; set; } 
+
+        public  string? SessionId { get; set; } 
 
         public string ? PaymentIntentId { get; set; }
 

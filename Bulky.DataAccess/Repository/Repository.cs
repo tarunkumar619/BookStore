@@ -90,7 +90,7 @@
 
             public void RemoveRange(IEnumerable<T> entity)
             {
-                DbSet.RemoveRange();    
+                DbSet.RemoveRange(entity);    
             }
         }
     }

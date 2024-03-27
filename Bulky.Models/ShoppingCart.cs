@@ -21,7 +21,6 @@ namespace Bulky.Models
         [Range(1,1000, ErrorMessage="please entre  a value between 1  to 1000")]
         public int count { get; set; }
 
-
         public string ApplicationUserId { get; set; }   
         [ForeignKey("ApplicationUserId")]
         [ValidateNever] 

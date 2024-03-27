@@ -1,4 +1,4 @@
-﻿using Bulky.DataAccess.Migrations;
+﻿using Bulky.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,6 @@ namespace Bulky.DataAccess.Repository.IRepository
 {
     public interface IApplicationUserRepository : IRepository<ApplicationUser>
     {
-        ApplicationUser Get(string id);
-        void Update(ApplicationUser applicationUser);
+
     }
 }
