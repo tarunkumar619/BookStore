@@ -4540,11 +4540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\BookStore\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
       "projectName": "Bulky.DataAccess",
-      "projectPath": "F:\\BookStore\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+      "projectPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\BookStore\\Bulky.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4561,11 +4561,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\BookStore\\Bulky.Models\\Bulky.Models.csproj": {
-              "projectPath": "F:\\BookStore\\Bulky.Models\\Bulky.Models.csproj"
+            "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Models\\Bulky.Models.csproj": {
+              "projectPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Models\\Bulky.Models.csproj"
             },
-            "F:\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj": {
-              "projectPath": "F:\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj"
+            "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj": {
+              "projectPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj"
             }
           }
         }

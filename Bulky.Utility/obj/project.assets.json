@@ -801,11 +801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj",
       "projectName": "Bulky.Utility",
-      "projectPath": "F:\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj",
+      "projectPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Utility\\Bulky.Utility.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\BookStore\\Bulky.Utility\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

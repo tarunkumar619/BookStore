@@ -564,11 +564,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\BookStore\\Bulky.Models\\Bulky.Models.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Models\\Bulky.Models.csproj",
       "projectName": "Bulky.Models",
-      "projectPath": "F:\\BookStore\\Bulky.Models\\Bulky.Models.csproj",
+      "projectPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Models\\Bulky.Models.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\BookStore\\Bulky.Models\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Downloads\\BookStore\\Bulky.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
