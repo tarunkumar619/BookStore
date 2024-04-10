@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Stripe;
 
+
+
+
+// this is my today's comment
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
